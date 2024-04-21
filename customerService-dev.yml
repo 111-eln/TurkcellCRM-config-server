@@ -12,7 +12,7 @@ server:
   #normalde burası 0 olmalı her instance için otomatik port ataması yapar
 spring:
   application:
-    name: customeService
+    name: customerService
   datasource:
     url: jdbc:postgresql://localhost:5432/crmTurkcellCustomerdb
     username: postgres
