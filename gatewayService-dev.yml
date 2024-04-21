@@ -12,7 +12,7 @@ eureka:
     preferIpAddress: true
 spring:
   application:
-    name: gateway-service
+    name: gatewayService
   cloud:
     config:
       enabled: false
