@@ -11,9 +11,6 @@ server:
   port: 9015
 
 spring:
-  cloud:
-    config:
-      enabled: false
   application:
     name: order-service
   datasource:
