@@ -28,9 +28,9 @@ spring:
           filters[0]: SetPath=/
           uri: http://localhost:9000
         routes[2]:
-          id: accountservice
-          predicates[0]: Path=/accountservice/api/v1/accounts/**
-          uri: lb://ACCOUNTSERVICE  
+          id: orderservice
+          predicates[0]: Path=/orderservice/api/v1/orders/**
+          uri: lb://ORDERSERVICE  
 
 
 
