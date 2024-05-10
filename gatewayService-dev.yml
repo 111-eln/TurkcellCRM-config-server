@@ -27,10 +27,7 @@ spring:
           predicates[0]: Path=/eureka/web
           filters[0]: SetPath=/
           uri: http://localhost:9000
-        routes[2]:
-          id: orderservice
-          predicates[0]: Path=/orderservice/api/v1/orders/**
-          uri: lb://ORDERSERVICE  
+        
 
 
 
