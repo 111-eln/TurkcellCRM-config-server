@@ -30,7 +30,7 @@ spring:
           id: discoveryserver
           predicates[0]: Path=/eureka/web
           filters[0]: SetPath=/
-          uri: http://localhost:9000
+          uri: http://localhost:9020
         
 
 
