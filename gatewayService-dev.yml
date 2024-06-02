@@ -37,7 +37,7 @@ spring:
           uri: lb://ACCOUNTSERVICE
         routes[4]:
           id: basketservice
-          predicates[0]: Path=/basketservice/api/v1/basket/**
+          predicates[0]: Path=/api/v1/basket/**
           uri: lb://BASKETSERVICE
         routes[5]:
           id: catalogservice
