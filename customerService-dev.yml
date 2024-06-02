@@ -12,6 +12,9 @@ server:
   #normalde burası 0 olmalı her instance için otomatik port ataması yapar
 
 spring:
+  cloud:
+    config:
+      enabled: true
   main:
     allow-bean-definition-overriding: true
   application:
