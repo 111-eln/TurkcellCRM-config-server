@@ -31,7 +31,25 @@ spring:
           predicates[0]: Path=/eureka/web
           filters[0]: SetPath=/
           uri: http://localhost:9020
-        
-
+        routes[3]:
+          id: accountservice
+          predicates[0]: Path=/acountservice/api/v1/accounts/**
+          uri: lb://ACCOUNTSERVICE
+        routes[4]:
+          id: basketservice
+          predicates[0]: Path=/basketservice/api/v1/basket/**
+          uri: lb://BASKETSERVICE
+        routes[5]:
+          id: catalogservice
+          predicates[0]: Path=/catalogservice/api/v1/products/**
+          uri: lb://CATALOGSERVICE
+        routes[6]:
+          id: identityservice
+          predicates[0]: Path=/identityservice/api/v1/auth/**
+          uri: lb://IDENTITYSERVICE
+        routes[7]:
+          id: searchservice
+          predicates[0]: Path=/searchservice/api/v1/customers/**
+          uri: lb://SEARCHSERVICE
 
 
