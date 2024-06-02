@@ -14,7 +14,7 @@ spring:
     config:
       enabled: true
   application:
-    name: invoice-service
+    name: invoiceService
   data:
     mongodb:
       database: invoiceServcieDb
