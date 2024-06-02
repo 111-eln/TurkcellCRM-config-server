@@ -17,7 +17,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: catalog-service
+    name: catalogService
   datasource:
     url: jdbc:postgresql://localhost:5432/crmTurkcellProductdb
     username: postgres
