@@ -14,7 +14,7 @@ spring:
     config:
       enabled: true
   application:
-    name: search-service
+    name: searchService
   data:
     mongodb:
       database: searchServcieDb
