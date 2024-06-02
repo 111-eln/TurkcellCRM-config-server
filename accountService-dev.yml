@@ -15,7 +15,7 @@ spring:
     config:
      enabled: true
   application:
-    name: account-service
+    name: accountService
   datasource:
     url: jdbc:postgresql://localhost:5432/crmTurkcellAccountdb
     username: postgres
