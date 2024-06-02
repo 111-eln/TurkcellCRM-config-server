@@ -1,0 +1,21 @@
+server:
+  port: 8086
+spring:
+  cloud:
+    config:
+     enabled: true
+  application:
+    name: basket-service
+  data:
+    redis:
+      host: localhost
+      port: 6379
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:9020/eureka
+  instance:
+    instance-id: ${spring.application.name}:${instanceId:${random.value}}
+    preferIpAddress: true
