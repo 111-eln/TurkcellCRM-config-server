@@ -33,7 +33,7 @@ spring:
           uri: http://localhost:9020
         routes[3]:
           id: accountservice
-          predicates[0]: Path=/acountservice/api/v1/accounts/**
+          predicates[0]: Path=/accountservice/api/v1/accounts/**
           uri: lb://ACCOUNTSERVICE
         routes[4]:
           id: basketservice
