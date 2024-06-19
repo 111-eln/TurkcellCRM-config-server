@@ -17,8 +17,8 @@ spring:
   application:
     name: accountService
   datasource:
-    url: jdbc:postgresql://localhost:5432/crmTurkcellAccountdb
-    username: postgres
+    url: jdbc:postgresql://localhost:5452/accountdbdev
+    username: admin
     password: 12345
   jpa:
     hibernate:
