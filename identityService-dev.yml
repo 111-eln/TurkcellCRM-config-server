@@ -8,8 +8,8 @@ spring:
     config:
       enabled: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/crmTurkcellIdentitydb
-    username: postgres
+    url: jdbc:postgresql://localhost:5451/authdbdev
+    username: admin
     password: 12345
   jpa:
     properties:
