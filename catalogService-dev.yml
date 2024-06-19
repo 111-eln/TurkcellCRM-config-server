@@ -19,8 +19,8 @@ spring:
   application:
     name: catalogService
   datasource:
-    url: jdbc:postgresql://localhost:5432/crmTurkcellProductdb
-    username: postgres
+    url: jdbc:postgresql://localhost:5455/catalogdbdev
+    username: admin
     password: 12345
   jpa:
     hibernate:
