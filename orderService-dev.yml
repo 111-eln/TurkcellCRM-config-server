@@ -19,8 +19,8 @@ spring:
   application:
     name: orderService
   datasource:
-    url: jdbc:postgresql://localhost:5432/crmTurkcellOrderdb
-    username: postgres
+    url: jdbc:postgresql://localhost:5454/orderdbdev
+    username: admin
     password: 12345
   jpa:
     hibernate:
