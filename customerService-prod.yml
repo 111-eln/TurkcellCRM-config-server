@@ -3,7 +3,7 @@ eureka:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost:9020/eureka
+      defaultZone: http://discoveryserver:9020/eureka
   instance:
     instance-id: ${spring.application.name}:${instanceId:${random.value}}
     preferIpAddress: true
@@ -20,7 +20,7 @@ spring:
   application:
     name: customerService
   datasource:
-    url: jdbc:postgresql://localhost:5450/customerdbdev
+    url: jdbc:postgresql://customerdbprod:5432/customerdbprod
     username: admin
     password: 12345
   jpa:
