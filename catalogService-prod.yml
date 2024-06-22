@@ -1,0 +1,43 @@
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://discoveryserver:9020/eureka
+  instance:
+    instance-id: ${spring.application.name}:${instanceId:${random.value}}
+    preferIpAddress: true
+server:
+  port: 9029
+  #normalde buras? 0 olmal? her instance i?in otomatik port atamas? yapar
+spring:
+  cloud:
+    config:
+     enabled: true
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: catalogService
+  datasource:
+    url: jdbc:postgresql://catalogdbprod:5432/catalogdbprod
+    username: admin
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      javax:
+        persistence:
+          validation:
+            mode: none
+    show-sql: true
+  kafka:
+    producer:
+      bootstrap-servers: kafka:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    springdoc:
+      swagger-ui:
+        disable-swagger-default-url: true
