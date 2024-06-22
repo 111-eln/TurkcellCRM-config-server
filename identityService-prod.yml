@@ -8,7 +8,7 @@ spring:
     config:
       enabled: true
   datasource:
-    url: jdbc:postgresql://authdbprod:5451/authdbprod
+    url: jdbc:postgresql://identitydbprod:5451/identitydbprod
     username: admin
     password: 12345
   jpa:
