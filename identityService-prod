@@ -1,0 +1,33 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: identityService
+  cloud:
+    config:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://localhost:5451/authdbdev
+    username: admin
+    password: 12345
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9020/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+jwt:
+  secret:
+    key: 12023660c1601aaada3da96a4a80612e291ec33b28f60b58191f8b2845eb237bc978efb4d339d0b09f285cda79c5d67eef4458d6cefbd592ac663c783d1a64ee
+  expiration: 600000
